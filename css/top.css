@@ -705,14 +705,22 @@ section.movie {
   position: relative;
   width: 100%; 
   height: 80vh;      /* 画面いっぱいにしたい場合 */
-  overflow: hidden;   /* 余白に見えるはみ出しを隠す */
 }
 #bg-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
+  .movie p {
+    width:100%;
+    position: absolute;
+    font-size: clamp(3.25rem, -7.4167rem + 13.3333vw, 4.25rem);
+    background-color: #000;
+    color: #ffffff;
+    top:25%;
+    padding:5% 0;
+    text-align: center;
+  }
 .heart {
     background-color: #fff;
     color:#000;
