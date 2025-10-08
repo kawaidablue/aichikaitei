@@ -372,6 +372,17 @@ position: absolute;
     padding-left:20px;
     font-size:13px;
 }
+.voice-wrap__groupright__right__grid__card__name-jpbig {
+  padding-left:20px;
+  padding-top:15px;
+  font-size:25px;
+  -webkit-text-stroke-width: 0.1px;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.voice-wrap__groupright__right__grid__card__jobbig {
+  padding-left:20px;
+  font-size:13px;
+}
 .voice-wrap__groupright__left{
     flex: 0 0 var(--left-w);
     min-width: 0;
@@ -499,7 +510,33 @@ position: absolute;
     box-sizing: border-box;
     top: 1.75px;
     left:15px;
-
+  }
+  .dli-arrow-rightbig {
+    display: inline-block;
+    vertical-align: middle;
+    color:#DB1517;
+    line-height: 1;
+    position: relative;
+    width: 1.5em;
+    height: 0.2em;
+    background: currentColor;
+    left: 83%;
+    bottom:22px;
+  }
+  
+  .dli-arrow-rightbig::before {
+    content: '';
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.2em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    position: absolute;
+    box-sizing: border-box;
+    top: 1.75px;
+    left:15px;
   }
 .voice-wrap__groupleft__right__grid__card__name-enbig {
     position:relative;
@@ -769,6 +806,11 @@ section.movie {
   padding-top: 15px;
   font-size: 22px;
 }
+.voice-wrap__groupright__right__grid__card__name-jpbig {
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 22px;
+}
 .voice-wrap__groupleft {
   max-width: 960px;
   justify-content: center;
@@ -850,6 +892,11 @@ section.movie {
   left: 20px;
 }
 .voice-wrap__groupright__right__grid__card__name-jp {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 22px;
+}
+.voice-wrap__groupright__right__grid__card__name-jpbig {
   padding-left: 20px;
   padding-top: 5px;
   font-size: 22px;
@@ -1092,6 +1139,8 @@ section.movie {
   position: static;
 }
 .voice-wrap__groupright__right__grid__card__name-enbig p {
+  -webkit-text-stroke-width:unset;
+  -webkit-text-stroke-color:unset;
   font-size: clamp(1.875rem, 1.1433rem + 3.6585vw, 2.8125rem);
   position: static;
   line-height: 1;
@@ -1267,6 +1316,18 @@ section.movie {
     bottom:-10px;
     left:75%;
   }
+  .dli-arrow-rightbig {
+    display: inline-block;
+    vertical-align: middle;
+    color:#DB1517;
+    line-height: 1;
+    position: relative;
+    width: 1.5em;
+    height: 0.2em;
+    background: currentColor;
+    bottom:-30px;
+    left:75%;
+  }
   .voice-wrap__groupleft__right__grid__card__name-en p {
     -webkit-text-stroke-width: unset;
     -webkit-text-stroke-color: unset;
@@ -1274,6 +1335,15 @@ section.movie {
     left: 10px;
     font-size: 36px;
     line-height: 35px;
+}
+.voice-wrap__groupleft__right__grid__card__name-jp {
+  padding-left: 10px;
+  padding-top: 30px;
+  font-size: 22px;
+}
+.voice-wrap__groupleft__right__grid__card__job{
+  padding-left: 10px;
+  font-size: 13px;
 }
 }
 @media screen and (max-width: 500px) {
@@ -1394,25 +1464,62 @@ border-left: 40px solid #d81f26;
         color: #DB1517;
         line-height: 1;
         position: relative;
-        width: 1.5em;
+        width: 1em;
         height: 0.2em;
         background: currentColor;
-        bottom: 20px;
-        left: 73%;
+        bottom: 19px;
+        left: 82%;
+}
+.dli-arrow-right::before {
+  top: 1.7px;
+  left: 7px;
+}
+.dli-arrow-rightbig::before {
+  top: 1.7px;
+  left: 7px;
+}
+.dli-arrow-rightbig {
+  display: inline-block;
+        vertical-align: middle;
+        color: #DB1517;
+        line-height: 1;
+        position: relative;
+        width: 1em;
+        height: 0.2em;
+        background: currentColor;
+        bottom: -10px;
+        left: 80%;
+}
+.voice-wrap__groupright__right__grid__card__job{
+  padding-top:5px;
+  padding-left: 10px;
+}
+.voice-wrap__groupright__right__grid__card__jobbig{
+  padding-top:5px;
+  padding-left: 20px;
+}
+.voice-wrap__groupright__right__grid__card__name-en p {
+  font-size: 30px;
+  line-height: 25px;
+  top: -26px;
 }
 .voice-wrap__groupright__right__grid__card__name-jp {
   padding-left: 10px;
   padding-top: 30px;
   font-size: 18px;
 }
+.voice-wrap__groupleft__right__grid__card__job{
+  padding-top:5px;
+  padding-left: 10px;
+}
 .voice-wrap__groupleft__right__grid__card__name-en p {
   font-size: 30px;
-  line-height: 30px;
-  top: -32px;
+  line-height: 25px;
+  top: -26px;
 }
 .voice-wrap__groupleft__right__grid__card__name-jp {
   padding-left: 10px;
-  padding-top: 25px;
+  padding-top: 30px;
   font-size: 18px;
 }
 .voice-wrap__groupleft__right__grid__card__name-enbig p {
@@ -1422,5 +1529,9 @@ border-left: 40px solid #d81f26;
 .header-wrap__nav {
   top: 55px;
 }
-
+.voice-wrap__groupright__right__grid__card__name-jpbig {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 18px;
+}
 }
